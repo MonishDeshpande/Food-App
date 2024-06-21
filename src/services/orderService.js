@@ -48,7 +48,6 @@ async function createOrder(userId, paymentMethod) {
     return order;
 
 }
-
 async function getAllOrdersCreatedByUser(userId) {
     const orders = await getOrdersByUserId(userId);
     if(!orders) {
